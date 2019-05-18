@@ -13,14 +13,24 @@
         </a>
 
         <ul class="navigation-site">
-          <li><a href="#">Студия</a></li>
-          <li><a href="#">Клиенты</a></li>
-          <li><a class="navigation-site-current">Магазин</a></li>
-          <li><a href="#">Контакты</a></li>
+          <li>
+            <a href="#">Студия</a>
+          </li>
+          <li>
+            <a href="#">Клиенты</a>
+          </li>
+          <li>
+            <a class="navigation-site-current">Магазин</a>
+          </li>
+          <li>
+            <a href="#">Контакты</a>
+          </li>
         </ul>
 
         <ul class="navigation-cart">
-          <li class="cart-link">Корзина</li>
+          <li>
+            <a class="cart-link" href="#">Корзина</a>
+          </li>
         </ul>
       </nav>
     </header>
@@ -31,9 +41,53 @@
       </div>
 
       <div class="row">
-        <section class="filter">
+        <section class="filters">
           <h2 class="visually-hidden">Форма фильтрации</h2>
-          <!-- Здесь будет форма -->
+          <form class="filter" action="https://echo.htmlacademy.ru">
+            <fieldset>
+              <legend>Сетка:</legend>
+              <ul>
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input filter-input-radio" id="adaptive-radio" type="radio" name="grid-type" value="adaptive" checked>
+                  <label for="adaptive-radio">Адаптивная</label>
+                </li>
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input filter-input-radio" id="fixed-radio" type="radio" name="grid-type" value="fixed">
+                  <label for="fixed-radio">Фиксированная</label>
+                </li>
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input filter-input-radio" id="rubber-radio" type="radio" name="grid-type" value="rubber">
+                  <label for="rubber-radio">Резиновая</label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset>
+              <legend>Особенности:</legend>
+              <ul>
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input filter-input-checkbox" id="slider-feature" type="checkbox" name="slider" checked>
+                  <label for="slider-feature">Слайдер</label>
+                </li>
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input filter-input-checkbox" id="advantage-feature" type="checkbox" name="advantage">
+                  <label for="advantage-feature">Блок преимуществ</label>
+                </li>
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input filter-input-checkbox" id="news-feature" type="checkbox" name="news" checked>
+                  <label for="news-feature">Новости</label>
+                </li>
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input filter-input-checkbox" id="gallery-feature" type="checkbox" name="gallery">
+                  <label for="gallery-feature">Галерея</label>
+                </li>
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input filter-input-checkbox" id="cart-feature" type="checkbox" name="cart">
+                  <label for="cart-feature">Корзина</label>
+                </li>
+              </ul>
+            </fieldset>
+            <button class="button filter-button" type="submit">Показать</button>
+          </form>
         </section>
 
         <section class="right-panel">
@@ -168,5 +222,25 @@
         </div>
       </div>
     </footer>
+    
+    <section class="modal modal-feedback">
+      <h2>Напишите нам</h2>
+      <form class="form-feedback" action="https://echo.htmlacademy.ru">
+        <div class="form-item form-item-half">
+          <label for="name">Ваше имя:</label>
+          <input class="feedback-name" id="name" type="tel" name="name" placeholder="Имя Фамилия">
+        </div>
+        <div class="form-item form-item-half">
+          <label for="email">Ваш e-mail:</label>
+          <input class="feedback-email" id="email" type="email" name="email" placeholder="email@example.com">
+        </div>
+        <div class="form-item">
+          <label for="message-text">Текст письма:</label>
+          <textarea class="feedback-message" id="message-text" placeholder="В свободной форме"></textarea>
+        </div>
+        <button class="button feedback-button" type="submit">Отправить</button>
+      </form>
+      <button class="modal-close" type="button">Закрыть</button>
+    </section>  
   </body>
 </html>
