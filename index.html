@@ -43,27 +43,24 @@
           <div class="slider-description">
             <h2 class="slider-title">Долго, дорого, скрупулезно.</h2>
             <p class="slider-text">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-            <a class="slder-button" href="#">Узнать больше</a>
+            <a class="slider-button" href="#">Узнать больше</a>
           </div>
-          <div class="slder-image"></div>
         </section>
         <section class="slider-item">
-            <div class="slider-description">
-              <h2 class="slider-title">Любим математику как никто другой</h2>
-              <p class="slider-text">Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
-              <a class="slder-button" href="#">Узнать больше</a>
-            </div>
-            <div class="slder-image"></div>
-          </section>
-          <section class="slider-item">
-              <div class="slider-description">
-                <h2 class="slider-title">Только ночь, только хардкор</h2>
-                <p class="slider-text">Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
-                <a class="slder-button" href="#">Узнать больше</a>
-              </div>
-              <div class="slder-image"></div>
-            </section>
-          </section>
+          <div class="slider-description">
+            <h2 class="slider-title">Любим математику как никто другой</h2>
+            <p class="slider-text">Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
+            <a class="slider-button" href="#">Узнать больше</a>
+          </div>
+        </section>
+        <section class="slider-item">
+          <div class="slider-description">
+            <h2 class="slider-title">Только ночь, только хардкор</h2>
+            <p class="slider-text">Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
+            <a class="slider-button" href="#">Узнать больше</a>
+          </div>
+        </section>
+      </section>
 
       <section class="products">
         <h2 class="visually-hidden">Возможности</h2>
@@ -126,22 +123,22 @@
         <h2 class="visually-hidden">Партнеры</h2>
         <ul>
           <li class="partner-item">
-            <a class="parthner-button" href="https://htmlacademy.ru/intensive/htmlcss">
+            <a class="partner-button" href="https://htmlacademy.ru/intensive/htmlcss">
               <img src="img/htmlacdemy-logo.png" width="199" height="68" alt="HTML Academy">
             </a>
           </li>
           <li class="partner-item">
-            <a class="parthner-button" href="#">
+            <a class="partner-button" href="#">
               <img src="img/borodinsli-logo.png" width="209" height="90" alt="Барбершоп «Бородинский»">
             </a>
           </li>
           <li class="partner-item">
-            <a class="parthner-button" href="#">
+            <a class="partner-button" href="#">
               <img src="img/pink-logo.png" width="185" height="52" alt="Pink">
             </a>
           </li>
           <li class="partner-item">
-            <a class="parthner-button" href="#">
+            <a class="partner-button" href="#">
               <img src="img/mishka-logo.png" width="173" height="84" alt="Mishka">
             </a>
           </li>
@@ -158,13 +155,13 @@
         <div class="feedback">
           <h3 class="feedback-title">NЁRDS DESIGN STUDIO</h3>
           <address>
-            191186, Санкт-Петербург,<br>
-            ул. Б. Конюшенная, д. 19/8<br>
+            191186, Санкт-Петербург,
+            ул. Б. Конюшенная, д. 19/8
           </address>
           <p>
             тел. +7 (812) 275-75-75
           </p>
-          <a class="feedback-button">Напишите нам</a>
+          <a class="feedback-button" href="#">Напишите нам</a>
         </div>
       </section>
 
@@ -184,12 +181,12 @@
       </div>
     </footer>
 
-    <section class="modal modal-feedback">
+    <section class="modal">
       <h2>Напишите нам</h2>
       <form class="form-feedback" action="https://echo.htmlacademy.ru">
         <div class="form-item form-item-half">
           <label for="name">Ваше имя:</label>
-          <input class="feedback-name" id="name" type="tel" name="name" placeholder="Имя Фамилия">
+          <input class="feedback-name" id="name" type="text" name="name" placeholder="Имя Фамилия">
         </div>
         <div class="form-item form-item-half">
           <label for="email">Ваш e-mail:</label>
@@ -197,7 +194,7 @@
         </div>
         <div class="form-item">
           <label for="message-text">Текст письма:</label>
-          <textarea class="feedback-message" id="message-text" placeholder="В свободной форме"></textarea>
+          <textarea class="feedback-message" id="message-text" name="message" placeholder="В свободной форме"></textarea>
         </div>
         <button class="button feedback-button" type="submit">Отправить</button>
       </form>
