@@ -45,6 +45,15 @@
           <h2 class="visually-hidden">Форма фильтрации</h2>
           <form class="filter" action="https://echo.htmlacademy.ru">
             <fieldset>
+              <legend>Стоимость:</legend>
+              <input type="range" name="price">
+              <label for="min-price">От</label>
+              <input class="filter-input" id="min-price" type="number" name="min-price" value="0">
+              <label for="max-price">До</label>
+              <input class="filter-input" id="max-price" type="number" name="max-price" value="15000">
+            </fieldset>
+
+            <fieldset>
               <legend>Сетка:</legend>
               <ul>
                 <li class="filter-option">
@@ -61,6 +70,7 @@
                 </li>
               </ul>
             </fieldset>
+
             <fieldset>
               <legend>Особенности:</legend>
               <ul>
@@ -95,13 +105,19 @@
             <h2 class="sorting-title">Сортировать:</h2>
             <ul class="sorting-items">
               <li class="sorting-item-select">
-                <button type="button" id="price-sorting">По цене</button>
+                <button class="price-sorting" type="button">По цене</button>
               </li>
               <li>
-                <button type="button" id="type-sorting">По типу</button>
+                <button class="type-sorting" type="button" >По типу</button>
               </li>
               <li>
-                <button type="button" id="name-sorting">По названию</button>
+                <button class="name-sorting" type="button" >По названию</button>
+              </li>
+              <li>
+                <button class="desc-sorting" type="button">По убыванию</button>
+              </li>
+              <li>
+                <button class="asc-sorting" type="button">По возрастанию</button>
               </li>
             </ul>
           </section>
@@ -189,12 +205,13 @@
 
     <footer class="footer-main">
       <section class="map">
+        <h3 class="visually-hidden">Как до нас добраться</h3>
         <div class="selector-img">
-          <img src="img/map.jpg" width="1440" height="416" alt="Карта">
-          <img src="img/map-marker.png" width="231" height="190" alt="Указатель на карте">
+          <img src="img/map.jpg" width="1440" height="416" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+          <img src="img/map-marker.png" width="231" height="190" alt="Указатель на офис компании">
         </div>
-        <div class="write-us">
-          <h3 class="write-us-title">NЁRDS DESIGN STUDIO</h3>
+        <div class="feedback">
+          <h3 class="feedback-title">NЁRDS DESIGN STUDIO</h3>
           <address>
             191186, Санкт-Петербург,
             ул. Б. Конюшенная, д. 19/8
@@ -202,7 +219,7 @@
           <p>
             тел. +7 (812) 275-75-75
           </p>
-          <a class="write-us-button" href="#">Напишите нам</a>
+          <a class="feedback-button" href="#">Напишите нам</a>
         </div>
       </section>
 
