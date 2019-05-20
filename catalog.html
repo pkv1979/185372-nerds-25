@@ -46,7 +46,10 @@
           <form class="filter" action="https://echo.htmlacademy.ru">
             <fieldset>
               <legend>Стоимость:</legend>
-              <input type="range" name="price">
+              <div class="range-price">
+                <span class="range-min-price">Минимальная цена</span>
+                <span class="range-max-price">Максимальная цена</span>
+              </div>
               <label for="min-price">От</label>
               <input class="filter-input" id="min-price" type="number" name="min-price" value="0">
               <label for="max-price">До</label>
@@ -104,20 +107,20 @@
           <section class="sorting">
             <h2 class="sorting-title">Сортировать:</h2>
             <ul class="sorting-items">
-              <li class="sorting-item-select">
-                <button class="price-sorting" type="button">По цене</button>
+              <li>
+                <button class="sorting-item-select" type="button">По цене</button>
               </li>
               <li>
-                <button class="type-sorting" type="button" >По типу</button>
+                <button class="sorting-item-select" type="button" >По типу</button>
               </li>
               <li>
-                <button class="name-sorting" type="button" >По названию</button>
+                <button class="sorting-item-select" type="button" >По названию</button>
               </li>
               <li>
-                <button class="desc-sorting" type="button">По убыванию</button>
+                <button class="type-sorting desc-sorting active-sorting" type="button">По убыванию</button>
               </li>
               <li>
-                <button class="asc-sorting" type="button">По возрастанию</button>
+                <button class="type-sorting asc-sorting" type="button">По возрастанию</button>
               </li>
             </ul>
           </section>
@@ -238,7 +241,7 @@
         </div>
       </div>
     </footer>
-    
+
     <section class="modal">
       <h2>Напишите нам</h2>
       <form class="form-feedback" action="https://echo.htmlacademy.ru">
@@ -257,6 +260,6 @@
         <button class="button feedback-button" type="submit">Отправить</button>
       </form>
       <button class="modal-close" type="button">Закрыть</button>
-    </section>  
+    </section>
   </body>
 </html>
