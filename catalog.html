@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -43,12 +45,12 @@
       <div class="row">
         <section class="filters">
           <h2 class="visually-hidden">Форма фильтрации</h2>
-          <form class="filter" action="https://echo.htmlacademy.ru">
+          <form class="filter" action="https://echo.htmlacademy.ru" method="get">
             <fieldset>
               <legend>Стоимость:</legend>
               <div class="range-price">
-                <span class="range-min-price">Минимальная цена</span>
-                <span class="range-max-price">Максимальная цена</span>
+                <button class="range-min-price" type="button">Минимальная цена</button>
+                <button class="range-max-price" type="button">Максимальная цена</button>
               </div>
               <label for="min-price">От</label>
               <input class="filter-input" id="min-price" type="number" name="min-price" value="0">
@@ -108,19 +110,19 @@
             <h2 class="sorting-title">Сортировать:</h2>
             <ul class="sorting-items">
               <li>
-                <button class="sorting-item-select active-sorting" type="button">По цене</button>
+                <a class="sorting-item-select active-sorting" href="?sorting=price">По цене</a>
               </li>
               <li>
-                <button class="sorting-item-select" type="button" >По типу</button>
+                <a class="sorting-item-select" href="?sorting=type">По типу</a>
               </li>
               <li>
-                <button class="sorting-item-select" type="button" >По названию</button>
+                <a class="sorting-item-select" href="?sorting=name">По названию</a>
               </li>
               <li>
-                <button class="type-sorting desc-sorting active-sorting" type="button">По убыванию</button>
+                <a class="type-sorting desc-sorting active-sorting" href="#">По убыванию</a>
               </li>
               <li>
-                <button class="type-sorting asc-sorting" type="button">По возрастанию</button>
+                <a class="type-sorting asc-sorting" href="#">По возрастанию</a>
               </li>
             </ul>
           </section>
@@ -128,62 +130,62 @@
           <ul class="catalog-list">
             <li class="product-item">
               <img src="img/sedona.jpg" width="360" height="576" alt="Sedona">
-              <div class="catalog-item-description visuallity">
+              <div class="catalog-item-description">
                 <h3>
-                  <a href="#">Sedona</a>
+                  <a class="catalog-item-header" href="#">Sedona</a>
                 </h3>
                 <p class="catalog-item-text">Информационный сайт для туристов</p>
-                <a class="catalog-item price" href="#">9 900 руб.</a>
+                <a class="button catalog-item price" href="#">9 900 руб.</a>
               </div>
             </li>
             <li class="product-item">
               <img src="img/pink.jpg" width="360" height="576" alt="Pink">
               <div class="catalog-item-description">
                 <h3>
-                  <a href="#">Pink App</a>
+                  <a class="catalog-item-header" href="#">Pink App</a>
                 </h3>
                 <p class="catalog-item-text">Продуктовый лендинг приложения для iOS и Android</p>
-                <a class="catalog-item price" href="#">9 900 руб.</a>
+                <a class="button catalog-item price" href="#">9 900 руб.</a>
               </div>
             </li>
             <li class="product-item">
               <img src="img/barbershop.jpg" width="360" height="576" alt="Барбершоп «Бородинский»">
               <div class="catalog-item-description">
                 <h3>
-                  <a href="#">Barbershop</a>
+                  <a class="catalog-item-header" href="#">Barbershop</a>
                 </h3>
                 <p class="catalog-item-text">Сайт салона красоты. Для мужчин, да.</p>
-                <a class="catalog-item price" href="#">9 900 руб.</a>
+                <a class="button catalog-item price" href="#">9 900 руб.</a>
               </div>
             </li>
             <li class="product-item">
               <img src="img/mishka.jpg" width="360" height="576" alt="Mishka">
               <div class="catalog-item-description">
                 <h3>
-                  <a href="#">Mishka</a>
+                  <a class="catalog-item-header" href="#">Mishka</a>
                 </h3>
                 <p class="catalog-item-text">Интернет-магазин вязаных игрушек</p>
-                <a class="catalog-item price" href="#">9 900 руб.</a>
+                <a class="button catalog-item price" href="#">9 900 руб.</a>
               </div>
             </li>
             <li class="product-item">
               <img src="img/aplus.jpg" width="360" height="576" alt="Обучение А+">
               <div class="catalog-item-description">
                 <h3>
-                  <a href="#">A Plus</a>
+                  <a class="catalog-item-header" href="#">A Plus</a>
                 </h3>
                 <p class="catalog-item-text">Лендинг курсов повышения квалификации</p>
-                <a class="catalog-item price" href="#">9 900 руб.</a>
+                <a class="button catalog-item price" href="#">9 900 руб.</a>
               </div>
             </li>
             <li class="product-item">
               <img src="img/kvast.jpg" width="360" height="576" alt="Кваст">
               <div class="catalog-item-description">
                 <h3>
-                  <a href="#">Кваст</a>
+                  <a class="catalog-item-header" href="#">Кваст</a>
                 </h3>
                 <p class="catalog-item-text">Промо-сайт производителя крафтового кваса</p>
-                <a class="catalog-item price" href="#">9 900 руб.</a>
+                <a class="button catalog-item price" href="#">9 900 руб.</a>
               </div>
             </li>
           </ul>
@@ -222,7 +224,7 @@
           <p>
             тел. +7 (812) 275-75-75
           </p>
-          <a class="feedback-button" href="#">Напишите нам</a>
+          <a class="button feedback-button" href="#">Напишите нам</a>
         </div>
       </section>
 
