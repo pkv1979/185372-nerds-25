@@ -54,11 +54,16 @@ a {
   text-transform: uppercase;
 }
 
+.product-item-description {
+  color: #283136;
+}
+
 .button {
   font-weight: 500;
   line-height: 18px;
   color: #ffffff;
   text-align: center;
+  text-transform: uppercase;
 
   background-color: #fb565a;
 }
@@ -75,6 +80,8 @@ a {
 }
 
 .button-green {
+  text-transform: uppercase;
+
   background-color: #00ca74;
 }
 
@@ -90,6 +97,8 @@ a {
 }
 
 .button-yellow {
+  text-transform: uppercase;
+
   background-color: #efc84a;
 }
 
@@ -102,6 +111,17 @@ a {
   color: rgba(255, 255, 255, 0.3);
 
   background-color: #e5a722;
+}
+
+.row-title {
+  background-color: #eeeeee;
+}
+
+.page-title {
+  font-size: 55px;
+  font-weight: 500;
+  line-height: 55px;
+  text-align: center;
 }
 
 .filter fieldset {
@@ -141,24 +161,24 @@ a {
   background-color: #d5d5d5;
 }
 
-.product-item {
+.catalog-item {
   background-color: #f8f8f8;
   box-shadow: 0 0 10px rgba(0, 1, 1, 0.1);
 }
 
-.product-item:hover,
-.product-item:focus,
-.product-item:active {
+.catalog-item:hover,
+.catalog-item:focus,
+.catalog-item:active {
   box-shadow: 0 0 10px rgba(0, 1, 1, 0.3);
 }
 
-.product-item .catalog-item-description {
+.catalog-item .catalog-item-description {
   display: none;
 }
 
-.product-item:hover .catalog-item-description,
-.product-item:focus .catalog-item-description,
-.product-item:active .catalog-item-description {
+.catalog-item:hover .catalog-item-description,
+.catalog-item:focus .catalog-item-description,
+.catalog-item:active .catalog-item-description {
   display: block;
 }
 
