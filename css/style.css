@@ -1,0 +1,235 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: 'Roboto', Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header-main {
+  background-color: #eeeeee;
+}
+
+.navigation-main {
+  font-weight: 500;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.navigation-main ul,
+.product-items {
+  list-style: none;
+}
+
+.navigation-main a {
+  color: #000000;
+}
+
+.navigation-main a:hover,
+.navigation-main a:focus {
+  color: #fb565a;
+}
+
+.navigation-main a:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.navigation-site-current {
+  border-bottom: 2px solid #fb565a;
+}
+
+.product-item-title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.button {
+  font-weight: 500;
+  line-height: 18px;
+  color: #ffffff;
+  text-align: center;
+
+  background-color: #fb565a;
+}
+
+.button:hover,
+.button:focus {
+  background-color: #e74246;
+}
+
+.button:active {
+  color: rgba(255, 255, 255, 0.3);
+
+  background-color: #d7373b;
+}
+
+.button-green {
+  background-color: #00ca74;
+}
+
+.button-green:hover,
+.button-green:focus {
+  background-color: #00bc6c;
+}
+
+.button-green:active {
+  color: rgba(255, 255, 255, 0.3);
+
+  background-color: #00aa62;
+}
+
+.button-yellow {
+  background-color: #efc84a;
+}
+
+.button-yellow:hover,
+.button-yellow:focus {
+  background-color: #eab534;
+}
+
+.button-yellow:active {
+  color: rgba(255, 255, 255, 0.3);
+
+  background-color: #e5a722;
+}
+
+.filter fieldset {
+  border: none;
+}
+
+.filter legend {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.filter ul {
+  list-style: none;
+}
+
+.filter-option label {
+  line-height: 20px;
+  color: #283136;
+}
+
+.filter-button {
+  color: #000000;
+
+  background-color: #eeeeee;
+}
+
+.filter-button:hover,
+.filter-button:focus {
+  background-color: #dfdfdf;
+}
+
+.filter-button:active {
+  color: rgba(0, 0, 0, 0.3);
+
+  background-color: #d5d5d5;
+}
+
+.product-item {
+  background-color: #f8f8f8;
+  box-shadow: 0 0 10px rgba(0, 1, 1, 0.1);
+}
+
+.product-item:hover,
+.product-item:focus,
+.product-item:active {
+  box-shadow: 0 0 10px rgba(0, 1, 1, 0.3);
+}
+
+.product-item .catalog-item-description {
+  display: none;
+}
+
+.product-item:hover .catalog-item-description,
+.product-item:focus .catalog-item-description,
+.product-item:active .catalog-item-description {
+  display: block;
+}
+
+.catalog-list {
+  list-style: none;
+}
+
+.catalog-item-description {
+  text-align: center;
+
+  background-color: #eeeeee;
+}
+
+.catalog-item-description .catalog-item-header {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.catalog-item-description .catalog-item-header:hover,
+.catalog-item-description .catalog-item-header:focus {
+  color: #fb565a;
+}
+
+.catalog-item-description .catalog-item-header:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.catalog-item-text {
+  line-height: 18px;
+  color: #666666;
+}
+
+.footer-social {
+  text-align: center;
+}
+
+.footer-social ul {
+  list-style: none;
+}
+
+.social-button {
+  color: #ffffff;
+
+  background-color: #e1e1e1;
+}
+
+.social-button:hover,
+.social-button:focus {
+  background-color: #e74246;
+}
+
+.social-button:active {
+  color: rgba(255, 255, 255, 0.3);
+
+  background-color: #d7373b;
+}
+
+.benefit b {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 36px;
+}
+
+.benefit p {
+  line-height: 22px;
+  color: #444444;
+}
+
+.modal {
+  display: none;
+}
