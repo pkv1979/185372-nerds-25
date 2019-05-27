@@ -73,7 +73,15 @@ a {
 
 .navigation-site,
 .navigation-cart {
+  margin: 0;
+  padding: 0;
   padding-top: 60px;
+}
+
+.navigation-site a,
+.navigation-cart a {
+  margin: 0;
+  padding: 0;
 }
 
 .navigation-site {
