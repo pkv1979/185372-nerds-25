@@ -25,6 +25,19 @@ a {
   text-decoration: none;
 }
 
+.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .container {
   width: 1200px;
   margin: 0 auto;
@@ -57,10 +70,12 @@ a {
   list-style: none;
 }
 
-.navigation-main a {
+.header-main-logo {
   width: 160px;
   height: 65px;
+}
 
+.navigation-main a {
   color: #000000;
 }
 
@@ -75,14 +90,15 @@ a {
 
 .navigation-site,
 .navigation-cart {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
   margin: 0;
+  margin-top: 14px;
   padding: 0;
 }
 
 .navigation-site {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   width: 440px;
 }
 
@@ -91,6 +107,7 @@ a {
 }
 
 .navigation-cart {
+  justify-content: flex-end;
   width: 160px;
 
   text-align: right;
@@ -102,7 +119,17 @@ a {
   background-color: #eeeeee;
 }
 
+.slider-item {
+  display: none;
+}
+
+.slider-item.slider-active {
+  display: block;
+}
+
 .slider-title {
+  margin: 0;
+
   font-size: 55px;
   font-weight: 500;
   line-height: 55px;
@@ -533,17 +560,4 @@ a {
 
 .modal {
   display: none;
-}
-
-.visually-hidden {
-  position: absolute;
-
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-
-  clip: rect(0 0 0 0);
-  overflow: hidden;
 }
