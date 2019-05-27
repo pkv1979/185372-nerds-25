@@ -32,12 +32,15 @@ a {
 }
 
 .header-main {
+  padding: 50px 0;
+
   background-color: #eeeeee;
 }
 
 .navigation-main {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 
   font-weight: 500;
   line-height: 30px;
@@ -57,7 +60,6 @@ a {
 .navigation-main a {
   width: 160px;
   height: 65px;
-  padding: 50px 25px;
 
   color: #000000;
 }
@@ -75,25 +77,23 @@ a {
 .navigation-cart {
   margin: 0;
   padding: 0;
-  padding-top: 60px;
-}
-
-.navigation-site a,
-.navigation-cart a {
-  margin: 0;
-  padding: 0;
 }
 
 .navigation-site {
-  width: 500px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 440px;
 }
 
-/* .navigation-site-current {
+.navigation-site-current {
   border-bottom: 2px solid #fb565a;
-} */
+}
 
 .navigation-cart {
   width: 160px;
+
+  text-align: right;
 }
 
 .slider {
@@ -262,7 +262,7 @@ a {
 }
 
 .filters {
-  width: 60px;
+  width: 260px;
 }
 
 .filter fieldset {
@@ -431,6 +431,11 @@ a {
 .catalog-item-text {
   line-height: 18px;
   color: #666666;
+}
+
+.pagination-info {
+  margin: 0;
+  padding: 0;
 }
 
 .pagination-item a {
