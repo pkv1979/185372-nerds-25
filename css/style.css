@@ -272,7 +272,14 @@ a {
   background-color: #eeeeee;
 }
 
+.row-title .container {
+  text-align: center;
+}
+
 .page-title {
+  display: inline-block;
+  width: 760px;
+
   padding-top: 60px;
   padding-bottom: 115px;
   margin: 0;
@@ -280,7 +287,6 @@ a {
   font-size: 55px;
   font-weight: 500;
   line-height: 55px;
-  text-align: center;
 }
 
 .row {
@@ -513,6 +519,8 @@ a {
 
 .footer-text {
   display: flex;
+  align-items: center;
+  padding: 75px 0;
 }
 
 .footer-social {
