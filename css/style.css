@@ -9,9 +9,9 @@ html {
 }
 
 body {
+  min-width: 1200px;
   margin: 0;
   padding: 0;
-  min-width: 1200px;
 
   font-family: 'Roboto', Arial, sans-serif;
   font-size: 16px;
@@ -102,8 +102,9 @@ input[type="radio"].visually-hidden {
 .navigation-site,
 .navigation-cart {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: center;
   margin: 0;
   margin-top: 14px;
   padding: 0;
@@ -119,9 +120,30 @@ input[type="radio"].visually-hidden {
 
 .navigation-cart {
   justify-content: flex-end;
-  width: 160px;
+  max-width: 160px;
 
   text-align: right;
+}
+
+.navigation-cart .cart-link {
+  position: relative;
+  padding-left: 80px;
+}
+
+.cart-link::before {
+  content: "";
+
+  position: absolute;
+  top: 2px;
+  left: 40px;
+  width: 15px;
+  height: 15px;
+
+  background-image: url("../img/cart.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+  opacity: 0.3;
 }
 
 .slider {
@@ -184,12 +206,17 @@ input[type="radio"].visually-hidden {
   color: #283136;
 }
 
+.products {
+  margin-bottom: 20px;
+  padding-bottom: 80px;
+  border-bottom: 2px solid #eeeeee;
+}
+
 .product-items {
   display: flex;
   justify-content: space-between;
   padding: 0;
   margin: 0;
-  margin-bottom: 50px;
 }
 
 .product-items:last-child {
@@ -348,10 +375,23 @@ input[type="radio"].visually-hidden {
 .info {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
+  margin-bottom: 45px;
+  padding-bottom: 48px;
+
+  border-bottom: 2px solid #eeeeee;
+}
+
+.about-us {
+  width: 660px;
+  padding-top: 55px;
 }
 
 .about-us-title {
+  margin: 0;
+  margin-bottom: 33px;
+  padding: 0;
+
   font-size: 45px;
   font-weight: 500;
   line-height: 45px;
@@ -359,23 +399,61 @@ input[type="radio"].visually-hidden {
 }
 
 .about-us-text {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 40px;
+
   color: #283136;
 }
 
 .about-us h3 {
+  margin: 0;
+  margin-bottom: 23px;
+  padding: 0;
+
   font-size: 16px;
   font-weight: 700;
   text-transform: uppercase;
 }
 
-.advantage b {
-  text-transform: uppercase;
-  color: #000000;
-  text-align: center;
+.about-us ul {
+  margin: 0;
+  padding: 0;
 }
 
 .about-us li {
+  position: relative;
+  margin-bottom: 24px;
+  padding-left: 35px;
+
   color: #283136;
+}
+
+.about-us li::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 0;
+  display: inline-block;
+  width: 25px;
+  height: 2px;
+
+  background-color: #ef5358;
+}
+
+.advantage {
+  width: 360px;
+  padding-top: 20px;
+}
+
+.advantage b {
+  display: block;
+  padding-top: 30px;
+  margin-bottom: 13px;
+
+  text-transform: uppercase;
+  color: #000000;
+  text-align: center;
 }
 
 .advantage-items {
@@ -388,15 +466,37 @@ input[type="radio"].visually-hidden {
 }
 
 .advantage-item-number {
+  padding: 0;
+  padding-top: 37px;
+  padding-right: 23px;
+  margin: 0;
+
   font-size: 45px;
   font-weight: 700;
   line-height: 10.06px;
   color: #000000;
 }
 
+.percents {
+  vertical-align: super;
+
+  font-size: 25px;
+}
+
 .advantage-item-text {
+  margin: 0;
+  padding: 0;
+  padding-top: 36px;
+
   line-height: 18px;
   color: #283136;
+}
+
+.partners {
+  margin-bottom: 80px;
+  padding-bottom: 45px;
+
+  border-bottom: 2px solid #eeeeee;
 }
 
 .partners ul {
@@ -404,7 +504,6 @@ input[type="radio"].visually-hidden {
   justify-content: space-around;
   align-items: center;
   margin: 0;
-  margin-bottom: 80px;
   padding: 0;
 }
 
@@ -693,6 +792,12 @@ input[type="radio"].visually-hidden {
 }
 
 .footer-social ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 0;
+  
   list-style: none;
 }
 
@@ -715,7 +820,7 @@ input[type="radio"].visually-hidden {
 
 .benefit {
   width: 560px;
-  margin-left: 140px;
+  margin-left: 159px;
 }
 
 .benefit b {
@@ -725,6 +830,10 @@ input[type="radio"].visually-hidden {
 }
 
 .benefit p {
+  margin: 0;
+  padding: 0;
+  padding-top: 8px;
+
   line-height: 22px;
   color: #444444;
 }
