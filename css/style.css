@@ -383,7 +383,7 @@ input[type="radio"].visually-hidden {
 }
 
 .about-us {
-  width: 660px;
+  width: 670px;
   padding-top: 55px;
 }
 
@@ -786,7 +786,7 @@ input[type="radio"].visually-hidden {
 }
 
 .footer-social {
-  width: 260px;
+  width: 280px;
 
   text-align: center;
 }
@@ -795,13 +795,21 @@ input[type="radio"].visually-hidden {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  width: 260px;
   margin: 0 auto;
   padding: 0;
-  
+
   list-style: none;
 }
 
 .social-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+
   color: #ffffff;
 
   background-color: #e1e1e1;
@@ -813,9 +821,11 @@ input[type="radio"].visually-hidden {
 }
 
 .social-button:active {
-  color: rgba(255, 255, 255, 0.3);
-
   background-color: #d7373b;
+}
+
+.social-button:active svg {
+  opacity: 0.3;
 }
 
 .benefit {
