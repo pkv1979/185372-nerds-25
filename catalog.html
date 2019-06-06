@@ -48,19 +48,24 @@
         <section class="filters">
           <h2 class="visually-hidden">Форма фильтрации</h2>
           <form class="filter" action="https://echo.htmlacademy.ru" method="get">
-            <fieldset>
-              <legend>Стоимость:</legend>
-              <div class="range-price">
-                <button class="range-min-price" type="button">Минимальная цена</button>
-                <button class="range-max-price" type="button">Максимальная цена</button>
+            <fieldset class="filter-price">
+              <legend class="form-header-price">Стоимость:</legend>
+              <div class="filter-range">
+                <div class="range-controls">
+                  <div class="range">
+                    <div class="bar"></div>
+                  </div>
+                  <button class="range-button range-min-price" type="button"><span class="visually-hidden">Минимальная цена</span></button>
+                  <button class="range-button range-max-price" type="button"><span class="visually-hidden">Максимальная цена</span></button>
+                </div>
+                <div class="range-price">
+                  <label class="min-price">От <input class="filter-input-price" id="min-price" type="text" name="min-price" value="0"></label>
+                  <label class="max-price">До <input class="filter-input-price" id="max-price" type="text" name="max-price" value="15000"></label>
+                </div>
               </div>
-              <label for="min-price">От</label>
-              <input class="filter-input" id="min-price" type="number" name="min-price" value="0">
-              <label for="max-price">До</label>
-              <input class="filter-input" id="max-price" type="number" name="max-price" value="15000">
             </fieldset>
 
-            <fieldset>
+            <fieldset class="filter-grid">
               <legend>Сетка:</legend>
               <ul>
                 <li class="filter-option">
@@ -78,7 +83,7 @@
               </ul>
             </fieldset>
 
-            <fieldset>
+            <fieldset class="filter-features">
               <legend>Особенности:</legend>
               <ul>
                 <li class="filter-option">
@@ -230,7 +235,7 @@
         <!-- <img class="map-img" src="img/map.jpg" width="1440" height="416" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
         <img class="map-marker" src="img/map-marker.png" width="231" height="190" alt="Указатель на офис компании"> -->
       </section>
-  
+
       <div class="footer-text container">
         <div class="footer-social">
           <ul>
@@ -258,7 +263,7 @@
             </li>
           </ul>
         </div>
-  
+
         <div class="benefit">
           <b>Давайте дружить, это выгодно!</b>
           <p>Скидка 10% для друзей из социальных сетей.</p>
