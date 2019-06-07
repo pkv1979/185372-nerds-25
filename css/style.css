@@ -829,7 +829,7 @@ input[type="radio"].visually-hidden {
   justify-content: space-between;
   flex-wrap: wrap;
 
-  margin-bottom: 95px;
+  margin-bottom: 54px;
 }
 
 .sorting-title {
@@ -847,8 +847,11 @@ input[type="radio"].visually-hidden {
 .sorting-items {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 
+  width: 271px;
   margin: 0;
+  margin-left: 208px;
   padding: 0;
 }
 
@@ -870,11 +873,49 @@ input[type="radio"].visually-hidden {
   opacity: 0.6;
 }
 
+.sorting-type {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+  width: 32px;
+}
+
 .type-sorting {
+  position: relative;
+
   color: #000000;
   opacity: 0.2;
 
   background-color: #a6a6a6;
+}
+
+.desc-sorting::before {
+  content: "";
+
+  position: absolute;
+  top: -4px;
+  left: -9px;
+  width: 11px;
+  height: 10px;
+
+  background-image: url("../img/icon-down-dir.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.asc-sorting::before {
+  content: "";
+
+  position: absolute;
+  top: -4px;
+  left: 20px;
+  width: 11px;
+  height: 10px;
+
+  background-image: url("../img/icon-up-dir.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .type-sorting:active,
@@ -896,11 +937,33 @@ input[type="radio"].visually-hidden {
 }
 
 .catalog-item {
+  position: relative;
   width: 360px;
-  margin-bottom: 35px;
+  margin-bottom: 26px;
 
+  border-top: 40px solid #eaeaea;
   background-color: #f8f8f8;
   box-shadow: 0 0 10px rgba(0, 1, 1, 0.1);
+}
+
+.catalog-item::before {
+  content: "";
+
+  position: absolute;
+  top: -40px;
+  left: 0;
+  width: 360px;
+  height: 40px;
+
+  opacity: 0.12;
+
+  background-image: url("../img/browser.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.catalog-item:hover::before {
+  opacity: 1;
 }
 
 .catalog-item:hover,
@@ -910,7 +973,24 @@ input[type="radio"].visually-hidden {
 }
 
 .catalog-item .catalog-item-description {
-  display: none;
+  display: block;
+  box-sizing: border-box;
+
+  position: absolute;
+  left: 0;
+  bottom: 0px;
+
+  width: 360px;
+  height: 231px;
+
+  text-align: center;
+  vertical-align: bottom;
+
+  background-color: #eeeeee;
+}
+
+.catalog-item:hover .catalog-item-description{
+  display: block;
 }
 
 .catalog-item:hover .catalog-item-description,
@@ -921,12 +1001,6 @@ input[type="radio"].visually-hidden {
 
 .catalog-list {
   list-style: none;
-}
-
-.catalog-item-description {
-  text-align: center;
-
-  background-color: #eeeeee;
 }
 
 .catalog-item-description .catalog-item-header {
