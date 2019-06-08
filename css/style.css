@@ -280,7 +280,7 @@ input[type="radio"].visually-hidden {
   color: rgba(255, 255, 255, 0.3);
 
   background-color: #d7373b;
-  box-shadow: 0 3px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 3px rgba(0, 1, 1, 0.1);
 }
 
 .slider-controls {
@@ -863,14 +863,14 @@ input[type="radio"].visually-hidden {
   opacity: 0.3;
 }
 
-.sorting-item-select:active,
-.sorting-item-select.active-sorting {
-  opacity: 1;
-}
-
 .sorting-item-select:hover,
 .sorting-item-select:focus {
   opacity: 0.6;
+}
+
+.sorting-item-select:active,
+.sorting-item-select.active-sorting {
+  opacity: 1;
 }
 
 .sorting-type {
@@ -918,14 +918,14 @@ input[type="radio"].visually-hidden {
   background-position: 0 0;
 }
 
-.type-sorting:active,
-.type-sorting.active-sorting {
-  opacity: 1;
-}
-
 .type-sorting:hover,
 .type-sorting:focus {
   opacity: 0.6;
+}
+
+.type-sorting:active,
+.type-sorting.active-sorting {
+  opacity: 1;
 }
 
 .catalog-list {
@@ -1052,7 +1052,7 @@ input[type="radio"].visually-hidden {
   flex-wrap: wrap;
 
   margin: 0;
-  margin-bottom: 62px;
+  margin-bottom: 57px;
   padding: 0;
 }
 
@@ -1060,14 +1060,17 @@ input[type="radio"].visually-hidden {
   margin-right: 12px;
 }
 
-.pagination-item:last-child {
-  width: 259px;
+.pagination-item:last-child a {
+  width: 260px;
   margin-right: 0;
 }
 
 .pagination-item a {
   display: block;
-  padding: 12px 17px;
+  padding: 15px 17px;
+
+  width: 50px;
+  height: 50px;
 
   font-weight: 500;
   line-height: 18px;
@@ -1076,11 +1079,11 @@ input[type="radio"].visually-hidden {
   text-align: center;
 
   background-color: #eeeeee;
-  border: 3px solid #dbdbdb;
 }
 
 .pagination-item-current a {
   background-color: #ffffff;
+  border: 3px solid #dbdbdb;
 }
 
 .pagination-item a:hover,
@@ -1091,7 +1094,7 @@ input[type="radio"].visually-hidden {
 .pagination-info a:active {
   opacity: 0.3;
 
-  box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
+  box-shadow: inset 0 3px rgba(0, 1, 1, 0.1);
   background-color: #d5d5d5;
 }
 
@@ -1205,6 +1208,7 @@ input[type="radio"].visually-hidden {
 
 .social-button:active {
   background-color: #d7373b;
+  box-shadow: inset 0px 3px rgba(0, 1, 1, 0.1);
 }
 
 .social-button:active svg {
