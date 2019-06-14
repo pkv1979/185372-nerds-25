@@ -1117,12 +1117,6 @@ input[type="radio"].visually-hidden {
   height: 416px;
 }
 
-/* .map-marker {
-  position: relative;
-  left: 1105px;
-  top: -354px;
-} */
-
 .feedback {
   position: absolute;
   left: 0;
@@ -1257,6 +1251,10 @@ input[type="radio"].visually-hidden {
   box-shadow: 0px 20px 40px rgba(0, 1, 1, 0.75);
 
   transform: translateY(-50%);
+}
+
+.modal-show {
+  display: block;
 }
 
 .modal-close {
