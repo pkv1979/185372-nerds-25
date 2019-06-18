@@ -472,6 +472,7 @@ input[type="radio"].visually-hidden {
   display: inline-block;
   width: 25px;
   height: 2px;
+  vertical-align: middle;
 
   background-color: #ef5358;
 }
@@ -594,10 +595,12 @@ input[type="radio"].visually-hidden {
 .page-title {
   display: inline-block;
   width: 760px;
+  
 
   padding-top: 78px;
   padding-bottom: 108px;
   margin: 0;
+  vertical-align: middle;
 
   font-size: 55px;
   font-weight: 500;
@@ -709,6 +712,8 @@ input[type="radio"].visually-hidden {
 .range-price label {
   display: inline-block;
   width: 50%;
+  vertical-align: middle;
+
   font-size: 16px;
   text-transform: uppercase;
 }
@@ -972,7 +977,6 @@ input[type="radio"].visually-hidden {
 
   border-top: 40px solid #eaeaea;
   background-color: #f8f8f8;
-  border: 1px solid rgba(0, 1, 1, 0.1);
 }
 
 .catalog-item::before {
