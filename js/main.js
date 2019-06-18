@@ -22,7 +22,7 @@ try {
 
 feedback.addEventListener("click", function(e) {
   e.preventDefault();
-  
+
   modal.classList.add("modal-show");
 
   if (storageName) {
@@ -107,4 +107,4 @@ window.addEventListener("keydown", function (e) {
       }
     }
   }
-})
+});
