@@ -354,6 +354,7 @@ input[type="radio"].visually-hidden {
 
 .product-item {
   width: 300px;
+  margin-bottom: 50px;
 }
 
 .product-item-title {
